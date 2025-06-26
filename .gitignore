@@ -1,0 +1,4 @@
+cmake-config.cmake
+build/
+
+.vscode/
