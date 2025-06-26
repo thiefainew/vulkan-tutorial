@@ -1,6 +1,7 @@
 # Vulkan Tutorial Project
 
-This is a minimal Vulkan setup using GLFW and GLM, built with CMake.
+⚠️ This project is currently set up for **Windows** using **MinGW-w64**, GLFW, GLM, and the Vulkan SDK.
+Here is the minimal setup using CMake.
 
 ## Requirements
 
