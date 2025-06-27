@@ -1,6 +1,7 @@
 # Vulkan Tutorial Project
 
 ⚠️ This project is currently set up for **Windows** using **MinGW-w64**, GLFW, GLM, and the Vulkan SDK.
+
 Here is the minimal setup using CMake.
 
 ## Requirements
@@ -13,7 +14,7 @@ Here is the minimal setup using CMake.
 
 ## Setup
 
-1. Create a `cmake-config.cmake` file in the project root:
+1. Create a `cmake-config.cmake` file in the project root (example paths, adjust with yours):
 
 ```cmake
 set(GLFW_INCLUDE_DIR "C:/libs/glfw/include")
