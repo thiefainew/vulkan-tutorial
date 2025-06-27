@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.10)
 project(VulkanTutorial)
 set(CMAKE_CXX_STANDARD 17)
 
+set(CMAKE_BUILD_TYPE Debug)
+
 # Load local machine-specific configuration (not tracked by Git)
 if(EXISTS "${CMAKE_SOURCE_DIR}/cmake-config.cmake")
     include("${CMAKE_SOURCE_DIR}/cmake-config.cmake")
@@ -32,4 +34,8 @@ link_directories(
 add_executable(VulkanTutorial main.cpp)
 
 # Linked libraries
-target_link_libraries(VulkanTutorial glfw3 vulkan-1 gdi32)
+if(WIN32)
+    target_link_libraries(VulkanTutorial glfw3 vulkan-1 gdi32)
+else()
+    target_link_libraries(VulkanTutorial glfw vulkan)
+endif()
